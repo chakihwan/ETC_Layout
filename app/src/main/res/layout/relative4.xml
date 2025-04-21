@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".Relative4Activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호   "
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/baseText"
+        android:layout_toLeftOf="@+id/baseText"
+        />
+    <EditText
+        android:id="@+id/baseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:text="000-0000-0000"/>
+    <Button
+        android:id="@+id/baseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baseText"
+        android:layout_alignParentRight="true"
+        android:text="취소"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/baseBtn"
+        android:layout_alignBaseline="@+id/baseBtn"
+        android:text="입력"
+        />
+
+
+</RelativeLayout>
